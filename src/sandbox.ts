@@ -7,7 +7,7 @@ greet = (name: string, greeting: string) => {
   console.log(`${name} says ${greeting}`);
 }
 
-// example 2
+// example 
 let calc: (a: number, b: number, c: string) => number;
 
 calc = (numOne: number, numTwo: number, action: string) => {
@@ -21,6 +21,12 @@ calc = (numOne: number, numTwo: number, action: string) => {
 // example 3
 let logDetails: (obj: {name: string, age: number}) => void;
 
-logDetails = (ninja: {name: string, age: number}) => {
+type person = {name: string, age: number}
+
+logDetails = (ninja: person) => {
   console.log(`${ninja.name} is ${ninja.age} years old`);
 }
+/* 
+logDetails = (ninja: {name: string, age: number}) => {
+  console.log(`${ninja.name} is ${ninja.age} years old`);
+} */
