@@ -9,7 +9,7 @@ age = 30;
 isLoggedIn = true;
 
 // arrays
-let ninjas: string[] = [];
+let ninjas: string[] = []; // kell a = [] ahhoz h lehesen bele pusholni
 
 ninjas.push('ryu');
 ninjas.push('chun-li');
@@ -22,7 +22,9 @@ mixed.push(false);
 mixed.push(20);
 console.log(mixed);
 
-let uid: string|number;
+let uid: string|number; // variabla-nal is meglehet adni union typeban
+uid = '123';
+uid = 123
 
 // objects
 let ninjaOne: object;
@@ -33,4 +35,5 @@ let ninjaTwo: {
   age: number,
   beltColour: string
 };
+
 ninjaTwo = { name: 'ken', age: 20, beltColour: 'black' };
