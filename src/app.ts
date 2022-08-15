@@ -1,4 +1,4 @@
-const anchor = document.querySelector('a')!;
+const anchor = document.querySelector('a')!; //vagy runtime check vagy !
 if(anchor) {
   console.log(anchor.href);
 }
