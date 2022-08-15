@@ -8,7 +8,7 @@
 //   console.log('hello, again');
 // }
 
-const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
+const add = (a: number, b: number, c/*?*/: number | string = 10): void => { // ?-et kell tenni ha optional, itt a 10 default parameter lesz, amit mindig a vegere kell tenni
   console.log(a + b);
   console.log(c);
 }
